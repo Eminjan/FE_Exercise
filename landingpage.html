@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Landingpage</title>
+    <style>
+        .btn {
+            border-width: 2px;
+        }
+        .form-control{
+            border-width: 2px;
+        }
+
+        .header-carousel-item {
+            height: 450px;
+        }
+
+        .bg-cover {
+            background-size: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, .6);
+        }
+
+        @media (min-width: 768px) {
+            .text-md-dark {
+                color: #333333;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="bg-secondary py-1">
+    <div class="container text-right">
+        <a href="#" class="text-white"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" class="text-white"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;NEO餐厅
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        美味菜单
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">蔬果口味</a>
+                        <a class="dropdown-item" href="#">没肉不舒服</a>
+                        <a class="dropdown-item" href="#">调味酱</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn btn-outline-primary mr-1" data-toggle="modal" data-target="#loginModal">登录</a>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">注册</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item header-carousel-item bg-cover active"
+                 style="background-image: url(https://images.unsplash.com/photo-1544965717-185b071dafb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>一个人，田野间的轻松美味</h5>
+                    <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                 style="background-image: url(https://images.unsplash.com/photo-1545029782-fbf86bf5df52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>一个人，田野间的轻松美味</h5>
+                    <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover"
+                 style="background-image: url(https://images.unsplash.com/photo-1545044311-ca988a7e955b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>一个人，田野间的轻松美味</h5>
+                    <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味一个人，田野间的轻松美味</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+<section class="bg-info py-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-2"><i class="fa fa-coffee fa-5x" aria-hidden="true"></i></div>
+                <h3>忘不了的莓果香</h3>
+                <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人,一个人，田野间的轻松美味一个人，田野间的轻松美味一个人</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2"><i class="fa fa-coffee fa-5x" aria-hidden="true"></i></div>
+                <h3>忘不了的莓果香</h3>
+                <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人,一个人，田野间的轻松美味一个人，田野间的轻松美味一个人</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2"><i class="fa fa-coffee fa-5x" aria-hidden="true"></i></div>
+                <h3>忘不了的莓果香</h3>
+                <p>一个人，田野间的轻松美味一个人，田野间的轻松美味一个人,一个人，田野间的轻松美味一个人，田野间的轻松美味一个人</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid py-5 bg-light text-white" style="position: relative">
+    <div class="row">
+        <div class="col-md-5 bg-cover" style="
+        position: absolute;top: 0;bottom: 0;
+        background-image: url(https://images.unsplash.com/photo-1545064931-b20012fe04e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-end text-md-dark">
+            <div class="col-md-7">
+                <h3>欢迎来到NEO餐厅</h3>
+                <p>
+                    遇到这些灰色到的地带，要到连三年才会比较没有清楚的感受，二者择夯实为什么人么选择喜欢来都这里，遇到这些灰色到的地带，要到连三年才会比较没有清楚的感受，二者择夯实为什么人么选择喜欢来都这里遇到这些灰色到的地带，要到连三年才会比较没有清楚的感受，二者择夯实为什么人么选择喜欢来都这里遇到这些灰色到的地带，要到连三年才会比较没有清楚的感受，二者择夯实为什么人么选择喜欢来都这里</p>
+                <a href="#" class="btn btn-outline-info">查看更多</a>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h4>像含羞草似的娇柔</h4>
+                        <p>扁你烽火，台电影星空，招致想巨炮，近两年最大，扁你烽火，台电影星空，招致想巨炮，近两年最大扁你烽火，台电影星空，招致想巨炮，近两年最大</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>像含羞草似的娇柔</h4>
+                        <p>扁你烽火，台电影星空，招致想巨炮，近两年最大，扁你烽火，台电影星空，招致想巨炮，近两年最大扁你烽火，台电影星空，招致想巨炮，近两年最大</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center my-3">如何这么美味</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="mr-3"><i class="fa fa-snowflake-o fa-4x" aria-hidden="true"></i></div>
+                    <div>
+                        <h3>美食的食材</h3>
+                        <p>啊我记得哈多久啊阿瓦达把我丢啊我给表弟啊给我嗲我的爱我打包i温度尬舞i的嘎我打完欸尬舞东风噶唔到我打完白色i发一个色ui哦方式</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="mr-3"><i class="fa fa-snowflake-o fa-4x" aria-hidden="true"></i></div>
+                    <div>
+                        <h3>美食的食材</h3>
+                        <p>啊我记得哈多久啊阿瓦达把我丢啊我给表弟啊给我嗲我的爱我打包i温度尬舞i的嘎我打完欸尬舞东风噶唔到我打完白色i发一个色ui哦方式</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32642.778333667764!2d111.39249497894676!3d30.685890524805576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3683983febad9fa9%3A0x7a7648294202dc6a!2z5LiJ5bOh5Yac5ZWG6ZO26KGMQVRN!5e0!3m2!1szh-CN!2s!4v1545188081728" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="username">姓名*</label>
+                        <input type="text" class="form-control" id="username" placeholder="请输入姓名" required>
+                        <div class="invalid-feedback">
+                            请输入姓名
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话*</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="请输入电话" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" class="form-control" id="email" placeholder="请输入Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="member">人数*</label>
+                        <input type="number" class="form-control" id="member" placeholder="请输入人数" required>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">需要素食</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">不需要素食</label>
+                    </div>
+                    <div class="mt-2 text-center">
+                        <button type="button" class="btn btn-secondary">取消</button>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1545082409-4ab37e454ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);">
+            <div class="row">
+                <div class="col-md-9">
+                    <small>加入我们</small>
+                   <h3>你便乖乖的把庆包你出啊刚上去，你是不信任你父亲的</h3>
+                    <p>吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子，吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子</p>
+                    <a href="#" class="btn btn-outline-warning">加入我们</a> 
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1545128337-6c5cf2684520?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60;">
+            <div class="row">
+                <div class="col-md-9">
+                    <small>品味佳丽</small>
+                   <h3>你便乖乖的把庆包你出啊刚上去，你是不信任你父亲的</h3>
+                    <p>吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子，吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子吨咱的激情是不值钱的，年代的人需要摔打，别人一定能够会但他只是一个孩子</p>
+                    <a href="#" class="btn btn-outline-warning">品味佳丽</a> 
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title" id="loginModalLabel">登录</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="account">账号</label>
+                <input type="text" class="form-control" id="account" placeholder="请输入账号" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">密码</label>
+                <input type="password" class="form-control" id="pwd" placeholder="请输入密码" required>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer ">
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切换到注册</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="registerModalLabel">注册</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="/" method="post">
+            <div class="form-group">
+                <label for="phone">手机</label>
+                <input type="text" class="form-control" id="phone" placeholder="请输入手机号" required>
+            </div>
+            <div class="form-group">
+                <label for="username">姓名</label>
+                <input type="password" class="form-control" id="username" placeholder="请输入姓名" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">密码</label>
+                <input type="password" class="form-control" id="pwd" placeholder="请输入密码" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd2">确认密码</label>
+                <input type="password" class="form-control" id="pwd2" placeholder="请再次输入密码" required>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切换到登录</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">注册</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5" style="background-color: #a5d8c7">
+    <div class="container">
+        <ul class="list-inline text-center">
+            <li class="list-inline-item">&copy;Copyright 2018 by Eminjan</li>
+            <li class="list-inline-item">
+                <a href="#" class="text-info">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-info">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+                </a>
+            </li>
+            <li>Made with Bootsrap4</li>
+        </ul>
+    </div>
+</footer>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
