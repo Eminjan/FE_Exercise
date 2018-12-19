@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css文件引入 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Font-awesome引入 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<title>Product</title>
+	<style type="text/css">
+		.btn-cart{
+			background-color:trasparent;
+		}
+		.btn-cart .badge{
+			position: absolute;
+			top: -1px;
+			right: -1px;
+		}
+		.dropdown-menu-right{
+			right: 0;
+			left: auto;
+		}
+		.jumbotron-bg{
+			background-image: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+			background-size: cover;
+			background-position: center center;
+			min-height: 400px;
+		}
+		.bg-lighter{
+			background-color: rgba(255,255,255,.65);
+		}
+		.h-100{
+			height: 100%;
+		}
+		.box-shadow{
+			box-shadow: 0 3px 5px rgba(0,0,0,.16);
+			transition: box-shadow .3s;
+		}
+		.box-shadow:hover{
+			box-shadow: 0 4px 10px rgba(0,0,0,.24)
+		}
+		.btn.disabled{
+			pointer-events: none;
+		}
+	</style>
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <i class="fa fa-heart text-info" aria-hidden="true"></i>
+    NEO商城
+  </a>
+  <div class="dropdown ml-auto">
+  	<button class="btn btn-sm btn-cart" data-toggle="dropdown">
+  		<i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+  		<span class="badge badge-pill badge-danger">3</span>
+  	</button>
+  	<div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+  		<div class="px-4 py-3">
+  			<h6>已添加商品</h6>
+  			<table class="table table-sm">
+  				<tbody>
+  					<tr>
+  						<td class="align-midle text-center">
+  							<a href="#removeModal" class="text-muted" data-toggle="dropdown"></a>
+  							<i class="fa fa-trash-o" aria-hidden="true"></i>
+  						</td>
+  						<td class="align-midle">金牌西裤</td>
+  						<td class="align-midle">1 件</td>
+  						<td class="align-midle text-right">$320</td>
+  					</tr>
+  					<tr>
+  						<td class="align-midle text-center">
+  							<a href="#removeModal" class="text-muted" data-toggle="dropdown"></a>
+  							<i class="fa fa-trash-o" aria-hidden="true"></i>
+  						</td>
+  						<td class="align-midle">金牌西装</td>
+  						<td class="align-midle">1 件</td>
+  						<td class="align-midle text-right">$520</td>
+  					</tr>
+  					<tr>
+  						<td class="align-midle text-center">
+  							<a href="#removeModal" class="text-muted" data-toggle="dropdown"></a>
+  							<i class="fa fa-trash-o" aria-hidden="true"></i>
+  						</td>
+  						<td class="align-midle">Kelme足球服</td>
+  						<td class="align-midle">1 件</td>
+  						<td class="align-midle text-right">$520</td>
+  					</tr>
+  				</tbody>
+  			</table>
+  			<a href="#" class="btn btn-primary btn-block">结账</a>
+  		</div>
+  	</div>
+  </div>
+</nav>
+
+<!-- 卡片 -->
+<div class="container">
+	<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-transparent pl-0">
+    <li class="breadcrumb-item"><a href="#">首页</a></li>
+    <li class="breadcrumb-item"><a href="#">服饰</a></li>
+    <li class="breadcrumb-item active" aria-current="page">西装</li>
+  </ol>
+</nav>
+<div class="row">
+	<div class="col-md-4">
+		<div class="sticky-top" style="top: 10px;">
+			<h1 class="h2">金牌西装</h1>
+		<div class="d-flex justify-content-end align-items-end">
+			<span class="text-muted">售价 $1299</span>
+			<div class="h3 ml-auto mb-0 text-danger">
+				<small>特价 NT$</small>
+				<strong>520</strong>
+			</div>
+		</div>
+		<hr> 尺寸:	
+		<div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+		  <label class="btn btn-outline-secondary active">
+		    <input type="radio" name="options" id="option1" autocomplete="off" checked>SM
+		  </label>
+		  <label class="btn btn-outline-secondary disabled">
+		    <input type="radio" name="options" id="option2" autocomplete="off" disabled>M
+		  </label>
+		  <label class="btn btn-outline-secondary">
+		    <input type="radio" name="options" id="option3" autocomplete="off">XL
+		  </label>
+		</div>
+		<div class="input-group mt-3">
+			<select name="" id="" class="form-control mr-1">
+				<option value="1">1 件</option>
+				<option value="2">2 件</option>
+				<option value="3">3 件</option>
+			</select>
+			<a href="#" class="btn btn-primary">
+				加入购物车
+			</a>
+		</div>
+		</div>
+		
+	</div>
+	
+	<div class="col-md-8">
+		<h2>帅气的西装无人能敌</h2>
+		<p class="card-text">
+			一起登上历史舞台，构成现代三件套西服的组成形式和许多穿着习惯。究斯特科尔前门襟口子一般不扣，要扣一般只扣腰围线上下的几粒，这就是现代的单排扣西装一般不扣扣子不为失礼，两粒扣子只扣上面一粒的穿着习惯的由来。
+			中世纪时期贵族服饰礼仪基本是法国人和法国宫廷倡导，并为其他欧洲宫廷所普遍效仿的。
+			凡尔赛宫的宫廷礼仪为他国仿效，成为当今国际礼仪的重要根源。
+			1802年，拿破仑称帝后，分封新贵族，复辟了一整套朝臣制度和宫廷礼仪。拿破仑制定了服饰法条例，各种礼仪对服饰要求严格，约瑟芬王后加冕时的长裙成为全国的样板。
+		</p>
+		<h3 class="mt-5 text-center">合身剪裁</h3>
+		<img  style="width: 100%" src="https://images.unsplash.com/photo-1499971856191-1a420a42b498?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		<h3 class="mt-2 text-center">钻石品质</h3>
+		<img src="https://images.unsplash.com/photo-1534961880437-ce5ae2033053?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width: 100%;">
+		<h3 class="mt-2 text-center">购物说明</h3>
+		<div class="bg-secondary py-5 mb-3 text-white img-thumbnail">
+			<p class="p-2 m-0">在购物过程中遇到什么困难，欢迎联系客服，我们帮你让你得到很好的服务和体验，商品都是八天无理由退款</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- 底部footer -->
+
+
+<footer class="bg-light text-muted py-5">
+	<div class="container">
+		<ul class="list-inline text-center">
+			<li class="list-inline-item">&copy;Copyright 2018 by Eminjan</li>
+			<li class="list-inline-item">
+				<a href="#" class="text-info">
+					<i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#" class="text-info">
+					<i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+				</a>
+			</li>
+		</ul>
+		<p class="text-center">
+			Made with Bootstrap4
+		</p>
+	</div>
+</footer>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
